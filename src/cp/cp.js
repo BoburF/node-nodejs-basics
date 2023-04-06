@@ -1,5 +1,5 @@
-import {fork} from "node:child_process"
-import {fileURLToPath} from "node:url"
+import { fork } from "node:child_process"
+import { fileURLToPath } from "node:url"
 
 const spawnChildProcess = async (args) => {
     // Write your code here
