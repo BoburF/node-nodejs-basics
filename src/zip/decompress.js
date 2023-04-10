@@ -10,7 +10,7 @@ const decompress = async () => {
   );
 
   const pathToZip = fileURLToPath(
-    new URL("./files/archive.txt.gz", import.meta.url)
+    new URL("./files/archive.gz", import.meta.url)
   );
 
   const unZip = createUnzip();
