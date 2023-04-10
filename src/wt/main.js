@@ -8,7 +8,6 @@ const performCalculations = async () => {
   for (let i = 0; i < cpus().length; i++) {
     const result = await new Promise((res, rej) => {
       const pathToWorker = fileURLToPath(new URL("./worker.js", import.meta.url))
-      console.log(pathToWorker)
       const worker = new Worker(pathToWorker, { workerData: 23 });
       worker.addListener("message", (response) => {
         res(response);
